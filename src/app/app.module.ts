@@ -18,6 +18,8 @@ import { EventdetailPage } from '../pages/eventdetail/eventdetail';
 import { TicketbuyPage } from '../pages/ticketbuy/ticketbuy';
 import { PaymentPage } from '../pages/payment/payment';
 import { InvoiceDetailPage } from '../pages/invoice-detail/invoice-detail';
+import { Autosize } from '../directives/autosize/autosize';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,10 @@ import { InvoiceDetailPage } from '../pages/invoice-detail/invoice-detail';
     PaymentPage,
     InvoiceDetailPage,
 
-    TabsPage
+    TabsPage,
+
+    
+    Autosize
   ],
   imports: [
     BrowserModule,
@@ -61,6 +66,7 @@ import { InvoiceDetailPage } from '../pages/invoice-detail/invoice-detail';
     StatusBar,
     SplashScreen,
     StatusBar,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

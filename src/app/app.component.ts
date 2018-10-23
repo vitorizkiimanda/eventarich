@@ -43,7 +43,7 @@ export class MyApp {
       this.splashScreen.hide();
                         
       // set status bar to white
-      this.statusBar.backgroundColorByHexString('#ffffff');
+      this.statusBar.backgroundColorByHexString('#f5f5f5');
     });
   }
 
