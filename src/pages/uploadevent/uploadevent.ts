@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, AlertController, ActionSheetController } from 'ionic-angular';
+import { NavController, NavParams, AlertController, ActionSheetController, App } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-uploadevent',
@@ -18,6 +19,7 @@ export class UploadeventPage {
     public navParams: NavParams,
     public alertCtrl: AlertController,
     public actionSheetCtrl : ActionSheetController,
+    public app: App,
     private camera: Camera) {
       
     this.minDate = new Date().toISOString();
@@ -29,7 +31,7 @@ export class UploadeventPage {
   }
 
   upload(){
-    this.navCtrl.pop();
+    this.app.getRootNav().setRoot(TabsPage, 0);
   }
 
   changePicture(){
