@@ -11,6 +11,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { OnboardingPage } from '../pages/onboarding/onboarding';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { CreateeventPage } from '../pages/createevent/createevent';
+import { TabsPage } from '../pages/tabs/tabs';
+import { UploadeventPage } from '../pages/uploadevent/uploadevent';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,11 @@ import { RegisterPage } from '../pages/register/register';
     ListPage,
     OnboardingPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    CreateeventPage,
+    UploadeventPage,
+
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,11 @@ import { RegisterPage } from '../pages/register/register';
     ListPage,
     OnboardingPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    CreateeventPage,
+    UploadeventPage,
+
+    TabsPage
   ],
   providers: [
     StatusBar,

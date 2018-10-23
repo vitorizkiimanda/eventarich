@@ -3,6 +3,7 @@ import { NavController, NavParams, AlertController, LoadingController } from 'io
 import { RegisterPage } from '../register/register';
 import { HomePage } from '../home/home';
 import { NgForm } from '@angular/forms';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-login',
@@ -82,7 +83,7 @@ export class LoginPage {
       loading.present();    
 
       setTimeout(() => { 
-        this.navCtrl.setRoot(HomePage)
+        this.navCtrl.setRoot(TabsPage)
         loading.dismiss();     
       }, 1000);
     }

@@ -3,6 +3,7 @@ import { NavController, NavParams, LoadingController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { HomePage } from '../home/home';
 import { NgForm } from '@angular/forms';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-register',
@@ -53,7 +54,7 @@ export class RegisterPage {
       loading.present();    
 
       setTimeout(() => { 
-        this.navCtrl.setRoot(HomePage)
+        this.navCtrl.setRoot(TabsPage)
         loading.dismiss();     
       }, 1000);
     }
