@@ -28,6 +28,7 @@ page-home {
 
     .dateCardLayout{
         padding: 0.5em;
+        padding-top: 30%;
         background-color: rgba(128, 128, 128, 0.1);
         border-bottom-left-radius: 2%; 
         height: 100%;
@@ -44,6 +45,9 @@ page-home {
 
     .eventName{
         font-size: 1.25em;
+    }
+
+    .eventCreator{
         margin: 0.5em 0;
     }
 
@@ -54,8 +58,20 @@ page-home {
         font-size: 1em;
     }
 
+    .customMiniIcon{
+
+        position: relative;
+        top: 0.05em;
+        color: gray;
+        font-size: 1em;
+    }
+
     .littleSpace{
         margin-left: 0.1em;
         margin-right: 0.075em;
+    }
+
+    .break{
+        margin-top: 0.5em
     }
 }
