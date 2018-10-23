@@ -11,4 +11,34 @@ page-home {
         position: relative;
         top: 0.15em;
     }
+
+    .imageCard{
+        width: 100%;
+        border-top-left-radius: 2%; 
+        border-top-right-radius: 2%; 
+    }
+
+    .card{
+        margin: 1.5em;    
+        border-radius: 2%; 
+        box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.35);
+    }
+
+    .dateCard{
+        margin: 0.5em;
+
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+        font-size: 1em;
+        font-weight: bold;
+        color: #fff;
+        line-height: 4em;
+        text-align: center;
+        background: rgb(34, 152, 231)
+    }
+
+    .cardContent{
+        padding: 0.5em;
+    }
 }
