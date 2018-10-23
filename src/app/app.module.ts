@@ -15,6 +15,8 @@ import { CreateeventPage } from '../pages/createevent/createevent';
 import { TabsPage } from '../pages/tabs/tabs';
 import { UploadeventPage } from '../pages/uploadevent/uploadevent';
 import { EventdetailPage } from '../pages/eventdetail/eventdetail';
+import { TicketbuyPage } from '../pages/ticketbuy/ticketbuy';
+import { PaymentPage } from '../pages/payment/payment';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { EventdetailPage } from '../pages/eventdetail/eventdetail';
     CreateeventPage,
     UploadeventPage,
     EventdetailPage,
+    TicketbuyPage,
+    PaymentPage,
 
     TabsPage
   ],
@@ -45,6 +49,8 @@ import { EventdetailPage } from '../pages/eventdetail/eventdetail';
     CreateeventPage,
     UploadeventPage,
     EventdetailPage,
+    TicketbuyPage,
+    PaymentPage,
 
     TabsPage
   ],
