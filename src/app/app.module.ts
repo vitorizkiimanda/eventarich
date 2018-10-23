@@ -17,6 +17,7 @@ import { UploadeventPage } from '../pages/uploadevent/uploadevent';
 import { EventdetailPage } from '../pages/eventdetail/eventdetail';
 import { TicketbuyPage } from '../pages/ticketbuy/ticketbuy';
 import { PaymentPage } from '../pages/payment/payment';
+import { InvoiceDetailPage } from '../pages/invoice-detail/invoice-detail';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PaymentPage } from '../pages/payment/payment';
     EventdetailPage,
     TicketbuyPage,
     PaymentPage,
+    InvoiceDetailPage,
 
     TabsPage
   ],
@@ -51,6 +53,7 @@ import { PaymentPage } from '../pages/payment/payment';
     EventdetailPage,
     TicketbuyPage,
     PaymentPage,
+    InvoiceDetailPage,
 
     TabsPage
   ],

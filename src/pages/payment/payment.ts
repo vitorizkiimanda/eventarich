@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { InvoiceDetailPage } from '../invoice-detail/invoice-detail';
 
 @Component({
   selector: 'page-payment',
@@ -27,7 +28,7 @@ export class PaymentPage {
   }
 
   pay(){
-    if(this.bankChoosen) this.navCtrl.push(HomePage);
+    if(this.bankChoosen) this.navCtrl.push(InvoiceDetailPage);
     else{
       const alert = this.alertCtrl.create({
         title: 'Pilih Metode',
