@@ -37,7 +37,7 @@ export class UploadeventPage {
   changePicture(){
     console.log("aw")
     let confirm = this.alertCtrl.create({
-      title: 'Perharui gambar kegiatan?',
+      title: 'Perbaharui gambar kegiatan?',
       message: 'anda dapat mengunggah ulang gambar',
       buttons: [
         {
