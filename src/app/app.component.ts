@@ -15,7 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = OnboardingPage;
+  rootPage: any = TabsPage;
 
   pages: Array<{title: string, component: any}>;
 
