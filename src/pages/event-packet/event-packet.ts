@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { EventPacketCustomizePage } from '../event-packet-customize/event-packet-customize';
 
 @Component({
   selector: 'page-event-packet',
@@ -12,6 +13,10 @@ export class EventPacketPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EventPacketPage');
+  }
+
+  toCustomize(){
+    this.navCtrl.push(EventPacketCustomizePage);
   }
 
 }

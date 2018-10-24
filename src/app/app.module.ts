@@ -21,6 +21,7 @@ import { InvoiceDetailPage } from '../pages/invoice-detail/invoice-detail';
 import { Autosize } from '../directives/autosize/autosize';
 import { Camera } from '@ionic-native/camera';
 import { EventPacketPage } from '../pages/event-packet/event-packet';
+import { EventPacketCustomizePage } from '../pages/event-packet-customize/event-packet-customize';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { EventPacketPage } from '../pages/event-packet/event-packet';
     PaymentPage,
     InvoiceDetailPage,
     EventPacketPage,
+    EventPacketCustomizePage,
 
     TabsPage,
 
@@ -62,6 +64,7 @@ import { EventPacketPage } from '../pages/event-packet/event-packet';
     PaymentPage,
     InvoiceDetailPage,
     EventPacketPage,
+    EventPacketCustomizePage,
 
     TabsPage
   ],
