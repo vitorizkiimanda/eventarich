@@ -1,11 +1,35 @@
 <ion-header>
 
   <ion-navbar color="eventarichPink" text-center>
-      <ion-title><span class="Title">Create Event</span><button ion-button clear class="invisibleButton"></button></ion-title>
+      <ion-title><span class="Title">Create Event</span></ion-title>
   </ion-navbar>
 
 </ion-header>
 
 <ion-content padding>
+  <div text-center>Estimasikan kondisi eventmu</div>
+  <ion-list>
+      <ion-item>
+        <ion-label floating>Estimasi Jumlah Peserta</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+          <ion-label>Jenis Event</ion-label>
+          <ion-select [(ngModel)]="eventType" interface="popover">
+            <ion-option value="Seminar">Seminar</ion-option>
+            <ion-option value="Wedding">Wedding</ion-option>
+            <ion-option value="Kompetisi">Kompetisi</ion-option>
+            <ion-option value="Birthday">Birthday</ion-option>
+            <ion-option value="Meeting">Meeting</ion-option>
+            <ion-option value="Convention">Convention</ion-option>
+            <ion-option value="Exhibition">Exhibition</ion-option>
+            <ion-option value="Lainnya">Lainnya</ion-option>
+          </ion-select>
+      </ion-item>
+  </ion-list>
+  <ion-item no-lines>
+      <button color="eventarichPink" ion-button (click)="submit()" block>Kirim</button>
+  </ion-item>  
 
 </ion-content>

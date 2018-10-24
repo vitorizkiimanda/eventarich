@@ -4,6 +4,7 @@ import { HomePage } from '../home/home';
 import { ListPage } from '../list/list';
 import { UploadeventPage } from '../uploadevent/uploadevent';
 import { NavParams } from 'ionic-angular';
+import { CreateeventPage } from '../createevent/createevent';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -15,7 +16,7 @@ export class TabsPage {
   tab1Root = HomePage;
   tab2Root = ListPage;
   tab3Root = UploadeventPage;
-  tab4Root = ListPage;
+  tab4Root = CreateeventPage;
   tab5Root = ListPage;
 
   constructor(public navParams: NavParams) {
