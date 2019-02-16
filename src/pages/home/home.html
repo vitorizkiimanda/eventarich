@@ -10,88 +10,240 @@
           <ion-title class="title">Eventarich</ion-title>        
         </ion-col>
         <ion-col col-2 text-right no-padding>
-          <ion-icon color="dark" class="ButtonRight" name="md-chatboxes"></ion-icon>
+          <!-- <ion-icon color="dark" class="ButtonRight" name="md-chatboxes"></ion-icon> -->
         </ion-col>
       </ion-row>
     </ion-grid>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
 
-  <div class="card" (click)="openDetail()">  
-    <img class="imageCard" src="assets/pict/HomeSlide.png"/>
-    <ion-grid no-padding>          
-      <ion-row no-padding>
-        <ion-col col-3 no-padding text-center>
-          <div class="dateCardLayout">
-            <div class="dateCard">28</div>
-            <div class="monthCard">Feb</div>
-            <hr>
-            <div><b>Free</b></div>
-          </div>
-        </ion-col>
-        <ion-col col-9 no-padding>
-          <div class="cardContent">
-            <div class="eventName"><b>event name</b></div>
-            <div class="eventCreator">event creator</div>
+<!-- <ion-content class="card-background-page">
+  <ion-card>
+    <img class="image-card" src="assets/pict/HomeSlide.png">
+    <div class="card-title">Kebutuhan</div>
+    <div class="card-subtitle">Cari semua kebutuhan eventmu disini</div>
+  </ion-card>
+
+  <ion-card>
+    <img class="image-card" src="assets/pict/HomeSlide.png">
+    <div class="card-title">Promosi</div>
+    <div class="card-subtitle">Promosikan eventmu disini</div>
+  </ion-card>
+
+  <ion-card>
+    <img class="image-card" src="assets/pict/HomeSlide.png">
+    <div class="card-title">Venue</div>
+    <div class="card-subtitle">Cari venue buat eventmu</div>
+  </ion-card>
+</ion-content> -->
+
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <div text-center><b>Hai, Selamat Pagi</b></div>
+  <div text-center>Apa yang kamu butuhkan buat Eventmu?</div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <div class="card" (click)="openKebutuhan()">  
+          <img class="imageCard" src="assets/pict/kebutuhan.jpg"/>
+            <div class="cardContent" text-center><b>Kebutuhan</b></div>
+            <!-- <div class="eventCreator">event creator</div>
             <div class="miniContent"><ion-icon name="md-pin" class="iconMini littleSpace"></ion-icon>&nbsp; event venue</div>
             <div><ion-icon name="md-time" class="iconMini"></ion-icon>&nbsp; event time</div>        
-            <div><span class="customMiniIcon littleSpace">#</span>&nbsp; <i>eventTag, eventTag, eventTag</i></div>        
-          </div>    
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
-  
-  <div class="card" (click)="openDetail()">  
-      <img class="imageCard" src="assets/pict/HomeSlide.png"/>
-      <ion-grid no-padding>          
-        <ion-row no-padding>
-          <ion-col col-3 no-padding text-center>
-            <div class="dateCardLayout">
-              <div class="dateCard">28</div>
-              <div class="monthCard">Feb</div>
-              <hr>
-              <div><b>Free</b></div>
-            </div>
-          </ion-col>
-          <ion-col col-9 no-padding>
-            <div class="cardContent">
-              <div class="eventName"><b>event name</b></div>
-              <div class="eventCreator">event creator</div>
-              <div class="miniContent"><ion-icon name="md-pin" class="iconMini littleSpace"></ion-icon>&nbsp; event venue</div>
-              <div><ion-icon name="md-time" class="iconMini"></ion-icon>&nbsp; event time</div>        
-              <div><span class="customMiniIcon littleSpace">#</span>&nbsp; <i>eventTag, eventTag, eventTag</i></div>        
-            </div>    
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
+            <div><span class="customMiniIcon littleSpace">#</span>&nbsp; <i>eventTag, eventTag, eventTag</i></div>         -->
+         <!--  <ion-grid no-padding>          
+            <ion-row no-padding>
+              <ion-col col-3 no-padding text-center>
+                <div class="dateCardLayout">
+                  <div class="dateCard">28</div>
+                  <div class="monthCard">Feb</div>
+                  <hr>
+                  <div><b>Free</b></div>
+                </div>
+              </ion-col>
+              <ion-col no-padding>
+                
+              </ion-col>
+            </ion-row>
+          </ion-grid> -->
+        </div>
+      </ion-col>
+      <ion-col col-4>
+        <div class="card" (click)="openPromosi()">  
+          <img class="imageCard" src="assets/pict/promote.png"/>
+          <div class="cardContent">
+            <div text-center><b>Promosi Event</b></div>
+            <!-- <div class="eventCreator">event creator</div>
+            <div class="miniContent"><ion-icon name="md-pin" class="iconMini littleSpace"></ion-icon>&nbsp; event venue</div>
+            <div><ion-icon name="md-time" class="iconMini"></ion-icon>&nbsp; event time</div>        
+            <div><span class="customMiniIcon littleSpace">#</span>&nbsp; <i>eventTag, eventTag, eventTag</i></div>         -->
+          </div>  
+          <!-- <ion-grid no-padding>          
+            <ion-row no-padding>
+              <ion-col col-3 no-padding text-center>
+                <div class="dateCardLayout">
+                  <div class="dateCard">28</div>
+                  <div class="monthCard">Feb</div>
+                  <hr>
+                  <div><b>Free</b></div>
+                </div>
+              </ion-col>
+              <ion-col no-padding>
+                  
+              </ion-col>
+            </ion-row>
+          </ion-grid> -->
+        </div>
+      </ion-col>
+      <ion-col col-4>
+        <div class="card" (click)="openVenue()">  
+          <img class="imageCard" src="assets/pict/venue.jpg"/>
+          <div class="cardContent">
+            <div text-center><b>Cari Venue</b></div>
+            <!-- <div class="eventCreator">event creator</div>
+            <div class="miniContent"><ion-icon name="md-pin" class="iconMini littleSpace"></ion-icon>&nbsp; event venue</div>
+            <div><ion-icon name="md-time" class="iconMini"></ion-icon>&nbsp; event time</div>        
+            <div><span class="customMiniIcon littleSpace">#</span>&nbsp; <i>eventTag, eventTag, eventTag</i></div>         -->
+          </div>  
+          <!-- <ion-grid no-padding>          
+            <ion-row no-padding>
+              <ion-col col-3 no-padding text-center>
+                <div class="dateCardLayout">
+                  <div class="dateCard">28</div>
+                  <div class="monthCard">Feb</div>
+                  <hr>
+                  <div><b>Free</b></div>
+                </div>
+              </ion-col>
+              <ion-col no-padding>
+                  
+              </ion-col>
+            </ion-row>
+          </ion-grid> -->
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <br>
+  <br>
 
-    
-  <div class="card" (click)="openDetail()">  
-      <img class="imageCard" src="assets/pict/HomeSlide.png"/>
-      <ion-grid no-padding>          
-        <ion-row no-padding>
-          <ion-col col-3 no-padding text-center>
-            <div class="dateCardLayout">
-              <div class="dateCard">28</div>
-              <div class="monthCard">Feb</div>
-              <hr>
-              <div><b>Free</b></div>
-            </div>
-          </ion-col>
-          <ion-col col-9 no-padding>
-            <div class="cardContent">
-              <div class="eventName"><b>event name</b></div>
-              <div class="eventCreator">event creator</div>
-              <div class="miniContent"><ion-icon name="md-pin" class="iconMini littleSpace"></ion-icon>&nbsp; event venue</div>
-              <div><ion-icon name="md-time" class="iconMini"></ion-icon>&nbsp; event time</div>        
-              <div><span class="customMiniIcon littleSpace">#</span>&nbsp; <i>eventTag, eventTag, eventTag</i></div>        
-            </div>    
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
+<ion-list>
+  <ion-list-header>
+    Blog
+  </ion-list-header>
+  <ion-card>
+
+    <ion-item>
+      <!-- <ion-avatar item-start>
+        <img src="img/marty-avatar.png">
+      </ion-avatar> -->
+      <h2>Event yang wajib kamu kunjungi di Indonesia</h2>
+      <p>November 31, 2018</p>
+    </ion-item>
+
+    <img src="assets/pict/HomeSlide.png">
+
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item>
+      <!-- <ion-avatar item-start>
+        <img src="img/marty-avatar.png">
+      </ion-avatar> -->
+      <h2>Event yang wajib kamu kunjungi di Indonesia</h2>
+      <p>November 31, 2018</p>
+    </ion-item>
+
+    <img src="assets/pict/HomeSlide.png">
+
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item>
+      <!-- <ion-avatar item-start>
+        <img src="img/marty-avatar.png">
+      </ion-avatar> -->
+      <h2>Event yang wajib kamu kunjungi di Indonesia</h2>
+      <p>November 31, 2018</p>
+    </ion-item>
+
+    <img src="assets/pict/HomeSlide.png">
+
+    <ion-card-content>
+      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>12 Likes</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>4 Comments</div>
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-list>  
+  
 </ion-content>

@@ -1,0 +1,19 @@
+page-eventkebutuhan {
+	.invisibleButton {
+        height:10px;
+        width:60px;
+    }
+    .imageCard{
+        width: 500px;
+        max-height: 70vw;
+        border-top-left-radius: 2%; 
+        border-top-right-radius: 2%; 
+        margin-bottom: -0.25em;
+    }
+
+    .card{
+        margin: 0.5em;   
+        box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.35);
+        border-radius: 0.01%;
+    }
+}

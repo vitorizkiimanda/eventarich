@@ -1,0 +1,61 @@
+<ion-header>
+
+  <ion-navbar color="eventarichPink" text-center>
+      <ion-title><span class="Title">Total</span><button ion-button clear class="invisibleButton"></button></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div text-center>Total Kebutuhan Eventmu</div>
+
+  <div class="methodLayout"> 
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2>
+        <ion-icon name="md-cube" class="iconBox"></ion-icon>
+      </ion-col>
+      <ion-col col-10>
+        <div class="methodName">Logistik</div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
+  
+
+  <div class="basic" (click)="tambahKebutuhan()">
+  	<ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <ion-icon name="md-add-circle" class="iconBox"></ion-icon>
+        </ion-col>
+        <ion-col col-10>
+          <div class="methodName"><b>Tambah Kebutuhan</b></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <!-- <ion-list *ngIf="isPlus" radio-group>
+    <ion-item (click)="tambahKebutuhan()">
+      <ion-label>Konsumsi</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Konveksi</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Souvenir</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Multimedia</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Event Organizer</ion-label>
+    </ion-item>
+  </ion-list> -->
+
+</ion-content>
+
+<ion-footer text-center class="footer">
+  <button outline ion-button block (click)='pay()'>Proses Pembayaran</button>
+</ion-footer>

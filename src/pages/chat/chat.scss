@@ -1,0 +1,12 @@
+page-chat {
+	.input-wrap {
+	padding: 5px;
+	display: flex;
+	textarea {
+	  flex: 1;
+	  border: 0;
+	  border-bottom: 1px #ff1493;
+	  border-style: solid;
+	}
+  }
+}

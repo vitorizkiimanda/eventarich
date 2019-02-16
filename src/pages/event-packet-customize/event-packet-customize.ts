@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, App } from 'ionic-angular';
 import { PaymentPage } from '../payment/payment';
+import { TotalPage } from '../total/total';
+
 
 @Component({
   selector: 'page-event-packet-customize',
@@ -24,7 +26,10 @@ export class EventPacketCustomizePage {
   tableChoosen:any;
   stageChoosen:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController, 
+    public navParams: NavParams,
+    public app: App) {
     this.updateFinalPrice();
   }
 
@@ -32,8 +37,8 @@ export class EventPacketCustomizePage {
     console.log('ionViewDidLoad EventPacketCustomizePage');
   }
 
-  pay(){
-    this.navCtrl.push(PaymentPage);
+  next(){
+    this.app.getRootNav().push(TotalPage);
   }
 
   venueUpdate(){

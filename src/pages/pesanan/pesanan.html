@@ -1,0 +1,74 @@
+<ion-header>
+
+  <ion-navbar color="eventarichPink" text-center>
+      <ion-title><span class="Title">Pesanan Kamu</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div text-center>Lihat Pesanan Kamu</div>
+
+  <ion-grid text-center class="methodLayout" (click)="toggleLog()">          
+    <ion-row no-padding text-center>
+      <ion-col col-2 no-padding>
+        <ion-icon name="md-cart" class="iconBank"></ion-icon>
+      </ion-col>   
+      <ion-col col-8 no-padding text-left>
+        <div class="methodName">Logistik</div>
+      </ion-col>    
+      <ion-col col-2 no-padding>
+        <ion-icon *ngIf="!isLog" name="ios-arrow-down-outline" class="iconArrow"></ion-icon>
+        <ion-icon *ngIf="isLog" name="ios-arrow-up-outline" class="iconArrow"></ion-icon>
+      </ion-col>    
+    </ion-row>
+  </ion-grid>
+
+  <ion-list *ngIf="isLog" >
+    <ion-item (click)="showAlert()">
+      <ion-label>Meja</ion-label>
+      <!-- <ion-radio value="Meja"></ion-radio> -->
+    </ion-item>
+    <ion-item (click)="showAlert()">
+      <ion-label>Kursi</ion-label>
+      <!-- <ion-radio value="Kursi"></ion-radio> -->
+    </ion-item>
+    <ion-item (click)="showAlert()">
+      <ion-label>Sound System</ion-label>
+      <!-- <ion-radio value="Sound System" [disabled]="isDisabled"></ion-radio> -->
+    </ion-item>
+    <ion-item (click)="showAlert()">
+      <ion-label>Panggung</ion-label>
+      <!-- <ion-radio value="Panggung" [disabled]="isDisabled"></ion-radio> -->
+    </ion-item>
+  </ion-list>
+
+  
+  <ion-grid text-center class="methodLayout" (click)="toggleCredit()">  
+    <ion-row no-padding text-center>
+      <ion-col col-2 no-padding>
+        <ion-icon name="md-laptop" class="iconBank"></ion-icon>
+      </ion-col>   
+      <ion-col col-8 no-padding text-left>
+        <div class="methodName">Multimedia</div>
+      </ion-col>    
+      <ion-col col-2 no-padding>
+        <ion-icon *ngIf="!isCredit" name="ios-arrow-down-outline" class="iconArrow"></ion-icon>
+        <ion-icon *ngIf="isCredit" name="ios-arrow-up-outline" class="iconArrow"></ion-icon>
+      </ion-col>    
+    </ion-row>
+  </ion-grid>
+
+  <ion-list *ngIf="isCredit" >
+    <ion-item (click)="showAlert()">
+      <ion-label>Kredivo</ion-label>
+      <!-- <ion-radio value="Photography"></ion-radio> -->
+    </ion-item>
+    <ion-item (click)="showAlert()">
+      <ion-label>Jenius</ion-label>
+      <!-- <ion-radio value="Videography"></ion-radio> -->
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+

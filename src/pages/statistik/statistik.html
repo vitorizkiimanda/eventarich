@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar color="eventarichPink" text-center>
+      <ion-title><span class="Title">Statistik Eventmu</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div text-center>Lihat Statistik Eventmu</div>
+	<br>
+	<br>
+
+	<ion-card>
+	  <ion-card-header>
+	    Statistik Eventmu
+	  </ion-card-header>
+
+	  <ion-list>
+	    <button ion-item (click)="showGender()">
+	      <ion-icon name="man" item-start></ion-icon>
+	      Jenis Kelamin
+	    </button>
+
+	    <button ion-item (click)="showUsia()">
+	      <ion-icon name="contacts" item-start></ion-icon>
+	      Rentang Usia
+	    </button>
+
+	    <button ion-item (click)="showKota()">
+	      <ion-icon name="pin" item-start></ion-icon>
+	      Asal Kota
+	    </button>
+
+	  </ion-list>
+	</ion-card>
+
+</ion-content>

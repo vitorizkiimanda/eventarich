@@ -23,7 +23,19 @@ import { Camera } from '@ionic-native/camera';
 import { EventPacketPage } from '../pages/event-packet/event-packet';
 import { EventPacketCustomizePage } from '../pages/event-packet-customize/event-packet-customize';
 import { EventSearchPage } from '../pages/event-search/event-search';
+import { EventkebutuhanPage } from '../pages/eventkebutuhan/eventkebutuhan';
 import { ProfilePage } from '../pages/profile/profile';
+import { EventpromosiPage } from '../pages/eventpromosi/eventpromosi';
+import { TotalPage } from '../pages/total/total';
+import { VenuecreatePage } from '../pages/venuecreate/venuecreate';
+import { VenuepilihPage } from '../pages/venuepilih/venuepilih';
+import { VenuedetailPage } from '../pages/venuedetail/venuedetail';
+import { PesananPage } from '../pages/pesanan/pesanan';
+import { StatistikPage } from '../pages/statistik/statistik';
+import { ChatPage } from '../pages/chat/chat';
+import { TermsPage } from '../pages/terms/terms';
+
+
 
 @NgModule({
   declarations: [
@@ -43,10 +55,19 @@ import { ProfilePage } from '../pages/profile/profile';
     EventPacketCustomizePage,
     EventSearchPage,
     ProfilePage,
+    EventkebutuhanPage,
+    EventpromosiPage,
+    TotalPage,
+    VenuecreatePage,
+    VenuepilihPage,
+    VenuedetailPage,
+    PesananPage,
+    StatistikPage,
+    ChatPage,
+    TermsPage,
 
     TabsPage,
 
-    
     Autosize
   ],
   imports: [
@@ -71,6 +92,16 @@ import { ProfilePage } from '../pages/profile/profile';
     EventPacketCustomizePage,
     EventSearchPage,
     ProfilePage,
+    EventkebutuhanPage,
+    EventpromosiPage,
+    TotalPage,
+    VenuepilihPage,
+    VenuecreatePage,
+    VenuedetailPage,
+    PesananPage,
+    StatistikPage,
+    ChatPage,
+    TermsPage,
 
     TabsPage
   ],

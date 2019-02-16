@@ -1,0 +1,83 @@
+<ion-header>
+
+  <ion-navbar color="eventarichPink" text-center>
+      <ion-title><span class="Title">Kebutuhan Event</span><button ion-button clear class="invisibleButton"></button></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+<br>
+<br>
+<br>
+    <div text-center>Pilih paket yang paling sesuai dengan eventmu</div>
+    <ion-grid>
+      <ion-row>
+    	<ion-col col-4>
+    		<div class="card" (click)="openLogistik()">
+			  <img class="imageCard" src="../assets/pict/logistik.jpg"/>
+			  <ion-card-content>
+			    <div text-center>
+			      <b>Logistik</b>
+			    </div>
+			  </ion-card-content>
+			</div>
+    	</ion-col>
+    	<ion-col col-4>
+    		<div class="card" (click)="openLogistik()">
+			  <img class="imageCard" src="../assets/pict/eo.jpg"/>
+			  <ion-card-content>
+			    <div text-center>
+			      <b>EO</b>
+			    </div>
+			  </ion-card-content>
+			</div>
+    	</ion-col>
+    	<ion-col col-4>
+    		<div class="card">
+			  <img class="imageCard" src="../assets/pict/konsumsi.jpg"/>
+			  <ion-card-content>
+			    <div text-center>
+			      <b>Konsumsi</b>
+			      </div>
+			  </ion-card-content>
+			</div>
+    	</ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+    	<ion-col col-4>
+    		<div class="card">
+			  <img class="imageCard" src="../assets/pict/konveksi.jpg"/>
+			  <ion-card-content>
+			    <div text-center>
+			      <b>Konveksi</b>
+			      </div>
+			  </ion-card-content>
+			</div>
+    	</ion-col>
+    	<ion-col col-4>
+    		<div class="card">
+			  <img class="imageCard" src="../assets/pict/souvenir.jpg"/>
+			  <ion-card-content>
+			    <div text-center>
+			      <b>Souvenir</b>
+			      </div>
+			  </ion-card-content>
+			</div>
+    	</ion-col>
+    	<ion-col col-4>
+    		<div class="card">
+			  <img class="imageCard" src="../assets/pict/mulmed.jpg"/>
+			  <ion-card-content>
+			    <div text-center>
+			      <b>Multimedia</b>
+			      </div>
+			  </ion-card-content>
+			</div>
+    	</ion-col>
+      </ion-row>
+    </ion-grid>
+
+</ion-content>

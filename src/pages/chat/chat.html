@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar color="eventarichPink" text-center>
+      <ion-title><span class="Title">Tanya Kami</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<br><br>
+	<div text-center><b>Hai, Selamat Pagi</b></div>
+	<div text-center>Apa yang bisa kami bantu?</div>
+</ion-content>
+
+<ion-footer no-border >
+  <div class="input-wrap">
+    <button ion-button clear icon-only item-right>
+      <ion-icon name="md-happy"></ion-icon>
+    </button>
+    <textarea placeholder="Sampaikan masalahmu">
+    </textarea>
+    <button ion-button clear icon-only item-right (click)="sendMsg()">
+      <ion-icon name="ios-send" ios="ios-send" md="md-send"></ion-icon>
+    </button>
+  </div>
+</ion-footer>

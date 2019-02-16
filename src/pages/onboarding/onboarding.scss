@@ -94,7 +94,7 @@ page-onboarding {
     .splash1{
         // background-image: url('../assets/pict/SplashScreen-01.png');
         // background: linear-gradient(#2387A4, #4AAFBE, #73D1DA);
-        background-color: #ff1493;
+        background-color: #12cf6b;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -102,7 +102,7 @@ page-onboarding {
     .splash2{
         // background-image: url('../assets/pict/SplashScreen-01.png');
         // background: linear-gradient(#2387A4, #4AAFBE, #73D1DA);
-        background-color: #ff1493;
+        background-color: #229afb;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -110,9 +110,12 @@ page-onboarding {
     .splash3{
         // background-image: url('../assets/pict/SplashScreen-01.png');
         // background: linear-gradient(#2387A4, #4AAFBE, #73D1DA);
-        background-color: #ff1493;
+        background-color: #8b2ffc;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .footer{
+        padding: 0.5em;
     }
 
 }
